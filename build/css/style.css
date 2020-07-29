@@ -20,11 +20,7 @@ body {
   text-transform: uppercase;
   line-height: 0.622;
   text-align: center;
-  text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
-  z-index: 25; }
-
-.heading {
-  margin-bottom: 25px; }
+  text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24); }
 
 .bg-headihg {
   background: #b2f2ee;
@@ -130,4 +126,13 @@ body {
 
 .works {
   padding-top: 127px;
-  background-color: #f8fafa; }
+  background-color: #f8fafa;
+  padding-bottom: 123px; }
+
+.text-works {
+  margin-bottom: 130px; }
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px; }
