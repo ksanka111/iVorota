@@ -10,8 +10,8 @@ html
 
   body
     header
-      .navigation
-        .container
+      .container
+        .navigation
           nav.navbar.navbar-light
             a.navbar-brand(href='#') 
               img(src="/images/Logo.png", alt="Logo")
@@ -24,73 +24,62 @@ html
                     | Home 
                     span.sr-only (current)
                 li.nav-item
-                  a.nav-link(href='#') About us
+                  a.nav-link(href='#about') About us
                 li.nav-item
-                  a.nav-link(href='#') Works
+                  a.nav-link(href='#works') Featured works
                 li.nav-item
-                  a.nav-link(href='#') Link
+                  a.nav-link(href='#services') Our services
                 li.nav-item
-                  a.nav-link(href='#') Link
+                  a.nav-link(href='#team') Small team
                 li.nav-item
-                  a.nav-link(href='#') Link
+                  a.nav-link(href='#') What they says
                 li.nav-item
-                  a.nav-link(href='#') Link
+                  a.nav-link(href='#') Our partners
                 li.nav-item
-                  a.nav-link(href='#') Link
-                li.nav-item
-                  a.nav-link(href='#') Link
+                  a.nav-link(href='#') Contact us
           h1.heading Say Hello to 
             span.bg-headihg SHOPNO!
-          h1.heading-2  
+            br 
             <span class="bg-headihg"> Agency</span> CORPORATE SHOPNO Theme
-          button.btn-contact(form="contacts") 
-            span.btn-text contact us
-          .wrap-img
-            .img-glass
-              img(src="images/JuiceGlass.png", alt="Juice Glass")
-            .img-coaster
-              img(src="images/Cork-coaster.png", alt="Cork coaster")
-
+          .button-wrapper.d-flex.justify-content-between
+            button.btn-contact(form="contacts") 
+              span.btn-text contact us
+            .wrap-img
+              .img-glass
+                img(src="images/JuiceGlass1.png", alt="Juice Glass")
     main
-      section.about-page
+      section#about.about-page
         .container
-          h2.title ABOUT US
-          p.text Lorem ipsum dolor sit amet event landing template
-          .wrap-about-page.d-flex.justify-content-between
+          h2 ABOUT US
+          h4 Lorem ipsum dolor sit amet event landing template
+          .wrap-about-page.d-flex.justify-content-between.flex-wrap
             #carouselExampleCaptions.carousel.slide(data-ride='carousel')
               ol.carousel-indicators
                 li.active.rounded-circle(data-target='#carouselExampleCaptions', data-slide-to='0')
                 li.rounded-circle(data-target='#carouselExampleCaptions', data-slide-to='1')
                 li.rounded-circle(data-target='#carouselExampleCaptions', data-slide-to='2')
-              .carousel-inner
-                .carousel-item.active
-                  img.img-carousel(src="images/Group_16.png", alt="Group 16")
-                  img.bg-carousel(src="images/Rectangle_1.png", alt="Rectangle_1")
-                .carousel-item
-                  img.bg-carousel(src="images/Rectangle_1.png", alt="Rectangle_1")
-                  img.img-carousel(src="images/Group_16.png", alt="Group 16")
-                .carousel-item
-                  img.bg-carousel(src="images/Rectangle_1.png", alt="Rectangle_1")
-                  img.img-carousel(src="images/Group_16.png", alt="Group 16")
-                .carousel-item
-                  img.bg-carousel(src="images/Rectangle_1.png", alt="Rectangle_1")
-                  img.img-carousel(src="images/Group_16.png", alt="Group 16")
+              .slide-img
+                .carousel-inner
+                  .carousel-item.active
+                    img.img-carousel(src="images/Group_16.png", alt="Group 16")
+                  .carousel-item
+                    img.bg-carousel(src="images/Group_16.png", alt="Rectangle_16") 
+                  .carousel-item
+                    img.img-carousel(src="images/Group_16.png", alt="Group 16")
+                  .carousel-item
+                    img.img-carousel(src="images/Group_16.png", alt="Group 16")
             .block-text-about
-              h3.heading-h3 We Actually Do amazing works
-              p A visual approach is an approach to a runway at an airport  con
-                |A visual approach is an approach to a runway at an airport  con
-                |A visual approach is an approach to a runway at an airport  con
-                |A visual approach is an approach to a runway at an airport  con
-              br
-              p A visual approach is an approach to a runway at an airport  con
-              br
-              h3.heading-h3 why we are the great?
-              p A visual approach is an approach to a runway at an airport  con
+              h3 We Actually Do amazing works
+              p A visual approach is an approach to a runway at an airport 
+                |conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.             
+              p Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+              h3 why we are the great?
+              p.mb-0 Preceding aircraft in approach correct sight. conducted under instrument flight rules.
 
-      section.works
+      section#works.works
         .container
-          h2.title featured works
-          p.text.text-works Lorem ipsum dolor sit amet event landing template
+          h2 featured works
+          h4 Lorem ipsum dolor sit amet event landing template
           .works-wrap
             .work1
               img(src="images/banner1.png", alt="banner1")
@@ -105,23 +94,23 @@ html
             .work1
               img(src="images/banner6.png", alt="banner6")
 
-      section.service
+      section#services.service
         .container
-          h2.title our services
-          p.text.text-works Lorem ipsum dolor sit amet event landing template
+          h2 our services
+          h4 Lorem ipsum dolor sit amet event landing template
           .service-wrap
             figure.service1.mb-0
-              img.gallery(src="images/6.png", alt="img")
+              .img-gallery-1
             figure.service2.mb-0
-              img.gallery(src="images/3.png", alt="img")
+              .img-gallery-2
             figure.service1.mb-0
-              img.gallery(src="images/2.png", alt="img")
+              .img-gallery-3
             figure.service2.mb-0
-              img.gallery(src="images/4.png", alt="img")
+              .img-gallery-4
             figure.service5.mb-0
-              img.gallery(src="images/5.png", alt="img")
+              .img-gallery-5
             figure.service6.mb-0
-              img.gallery(src="images/1.png", alt="img")
+              .img-gallery-6
 
 
 
