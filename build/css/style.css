@@ -8,6 +8,9 @@ body {
 header {
   background: #eff0f2; }
 
+.container {
+  max-width: 1140px !important; }
+
 .navigation {
   position: relative; }
 
@@ -134,40 +137,113 @@ main p {
 
 .service-wrap {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-gap: 12px; }
+  grid-auto-rows: minmax(422px, auto);
+  grid-gap: 14px; }
+
+.mask {
+  background: rgba(0, 0, 0, 0.342);
+  padding: 180px 0 54px 60px; }
+  .mask a {
+    font-size: 18px;
+    font-family: "Raleway";
+    color: rgba(249, 251, 251, 0.902);
+    text-transform: uppercase;
+    text-align: left; }
+  .mask p {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.902);
+    line-height: 1.563;
+    text-align: left; }
+  .mask h3 {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(255, 255, 255, 0.949);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.45;
+    text-align: left; }
 
 .service1 {
   grid-column-start: 1;
-  grid-column-end: 14; }
+  grid-column-end: 14;
+  background: url(../images/6.png) no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative; }
+
+.service1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 422px;
+  background: #71f5ea;
+  transition: all 1.5s ease; }
+
+.service1:hover:before {
+  width: 100%; }
 
 .service2 {
   grid-column-start: 14;
-  grid-column-end: 23; }
+  grid-column-end: 23;
+  background: url(../images/img3.png);
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative; }
+
+.service2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 422px;
+  background: #71f5ea;
+  transition: all 1.5s ease; }
+
+.service2:hover:before {
+  width: 100%; }
 
 .service5 {
   grid-column-start: 1;
-  grid-column-end: 11; }
+  grid-column-end: 11;
+  background: url(../images/5.png);
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative; }
+
+.service5:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 422px;
+  background: #71f5ea;
+  transition: all 1.5s ease; }
+
+.service5:hover:before {
+  width: 100%; }
 
 .service6 {
   grid-column-start: 11;
-  grid-column-end: 23; }
+  grid-column-end: 23;
+  background: url(../images/1.png);
+  background-size: contain;
+  transition: all 0.3s ease;
+  position: relative; }
 
-.img-gallery-1 {
-  background: url(../images/6.png) rgba(0, 0, 0, 0.6); }
+.service6:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 422px;
+  background: #71f5ea;
+  transition: all 1.5s ease; }
 
-.img-gallery-2 {
-  background: url(../images/img3.png); }
-
-.img-gallery-3 {
-  background: url(../images/2.png); }
-
-.img-gallery-4 {
-  background: url(../images/4.png); }
-
-.img-gallery-5 {
-  background: url(../images/5.png); }
-
-.img-gallery-6 {
-  background: url(../images/1.png); }
+.service6:hover:before {
+  width: 100%; }
