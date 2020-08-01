@@ -322,7 +322,7 @@ main p {
   background: url(../images/Photo-5.png); }
 
 .img-team-6 {
-  background: url(../images/Photo-6.png); }
+  background: url(../images/Photo-1.png); }
 
 .block-quote {
   display: none;
@@ -380,3 +380,42 @@ main p {
     margin-right: 10px; }
   .quote-social .fa-envelope {
     font-size: 17px; }
+
+.reviews {
+  background: #f9fbfb;
+  padding: 120px 0 130px 0; }
+
+.d-block {
+  width: 88% !important; }
+
+#carouselExampleControls {
+  display: flex;
+  justify-content: space-between; }
+
+.carousel-block {
+  background: #eaebed;
+  max-width: 667px;
+  margin: auto 0;
+  padding: 90px 83px; }
+  .carousel-block h3 {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.949);
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center; }
+  .carousel-block p {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.702);
+    line-height: 1.688;
+    text-align: center; }
+  .carousel-block i {
+    color: #f2da3b; }
+  .carousel-block .stars {
+    text-align: center; }
+
+.carousel-control.prev, .carousel-control.next {
+  background: none;
+  border: none;
+  color: #b2b2b2 !important; }
