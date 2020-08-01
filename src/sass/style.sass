@@ -157,7 +157,7 @@ main
     grid-gap: 14px
 
 .mask
-    background: rgba(0, 0, 0, 0.342)
+    background: rgba(0, 0, 0, 0.6)
     padding: 180px 0 54px 60px
 
     a 
@@ -206,7 +206,7 @@ main
 .service2
     grid-column-start: 14
     grid-column-end: 23
-    background: url(../images/img3.png)
+    background: url(../images/img3.png) no-repeat
     background-size: contain
     transition: all 0.3s ease
     position: relative
@@ -227,7 +227,7 @@ main
 .service3
     grid-column-start: 1
     grid-column-end: 14
-    background: url(../images/2.png)
+    background: url(../images/2.png) no-repeat
     background-size: contain
     transition: all 0.3s ease
     position: relative
@@ -248,7 +248,7 @@ main
 .service4
     grid-column-start: 14
     grid-column-end: 23
-    background: url(../images/4.png)
+    background: url(../images/4.png) no-repeat
     background-size: contain
     transition: all 0.3s ease
     position: relative
@@ -269,7 +269,7 @@ main
 .service5
     grid-column-start: 1
     grid-column-end: 11
-    background: url(../images/5.png)
+    background: url(../images/5.png) no-repeat
     background-size: contain
     transition: all 0.3s ease
     position: relative
@@ -290,7 +290,7 @@ main
 .service6
     grid-column-start: 11
     grid-column-end: 23
-    background: url(../images/1.png)
+    background: url(../images/1.png) no-repeat
     background-size: contain
     transition: all 0.3s ease
     position: relative
@@ -309,4 +309,70 @@ main
 .service6:hover:before
     width: 100%
 
+// Page Team
 
+.team
+    background: #fff
+    padding-top: 120px
+
+
+.team-photo-wrapper
+    display: grid
+    grid-auto-rows: minmax(440px, auto)
+    grid-gap: 18px
+    grid-template-columns: repeat(3, 1fr)
+
+.img-team
+    position: relative
+
+
+.img-team:hover .block-quote
+    display: block
+
+// .img-team:before:hover
+//     width: 100%
+
+.img-team-1
+    background: url(../images/Photo-1.png)
+
+
+.block-quote
+    display: none
+    position: absolute
+    left: 16px
+    bottom: 13px
+    width: 336px
+    height: 240px
+    background: #70f6eb
+    padding-top: 39px
+    padding-left: 36px
+
+    h3
+        font-size: 20px
+        font-family: "Merriweather"
+        color: rgba(39, 39, 39, 0.949)
+        font-weight: bold
+        line-height: 1.2
+        text-align: center
+
+.quote
+    position: absolute
+    left: 38px
+    top: 137px
+    transform: rotate(45deg)
+    width: 0
+    height: 0
+    border-left: 50px solid transparent
+    border-right: 50px solid transparent
+    border-bottom: 100px solid #70f6eb
+    display: none
+
+
+.img-team:hover .quote
+    display: block
+
+span
+    color: #757776
+    font-family: "Merriweather"
+    font-size: 18px
+    font-style: oblique
