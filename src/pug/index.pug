@@ -341,7 +341,20 @@ html
       section.contact
         .container
           .contact-wrapper
-            form
+            .contact-form
+              form#forma(action="mail.php" method="post")
+                input.name(type="text", name="name", placeholder="Name*")
+                input.subject(type="text", name="subject", placeholder="Subject*")
+                input.mail(type="text", name="mail", placeholder="E-mail")
+                textarea#message(name="message", cols="30", rows="10", placeholder="Message")
+                .button
+                  button
+                    a(href="#") SEND MESSAGE
+            .adress
+              p Adress line 1
+              p Adress line 2
+              p Phone:  548 94564
+              p Fax: +456456 54546
 
 
 

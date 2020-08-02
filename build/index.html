@@ -306,7 +306,23 @@
       <section class="contact">
         <div class="container">
           <div class="contact-wrapper">
-            <form></form>
+            <div class="contact-form">
+              <form id="forma" action="mail.php" method="post">
+                <input class="name" type="text" name="name" placeholder="Name*">
+                <input class="subject" type="text" name="subject" placeholder="Subject*">
+                <input class="mail" type="text" name="mail" placeholder="E-mail">
+                <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="button">
+                  <button><a href="#">SEND MESSAGE</a></button>
+                </div>
+              </form>
+            </div>
+            <div class="adress">
+              <p>Adress line 1</p>
+              <p>Adress line 2</p>
+              <p>Phone:  548 94564</p>
+              <p>Fax: +456456 54546</p>
+            </div>
           </div>
         </div>
       </section>

@@ -458,6 +458,61 @@ main p {
   padding-bottom: 104px; }
 
 .contact {
-  background: url(../images/Bg-copy-4.png);
   padding-top: 122px;
-  padding-bottom: 124px; }
+  padding-bottom: 124px;
+  background: #f8fafb url(../images/christmas_snow_trees-wide.png) no-repeat;
+  opacity: 0.671; }
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.contact-form {
+  max-width: 598px;
+  background: #021623;
+  opacity: 0.71;
+  box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12); }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 33px; }
+  .contact-form input, .contact-form textarea {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 3.4;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 0;
+    border-top: 0;
+    border-right: 0; }
+  .contact-form textarea, .contact-form .button, .contact-form input {
+    background: #021623; }
+  .contact-form textarea {
+    height: 137px;
+    margin-bottom: 36px; }
+  .contact-form button {
+    margin-bottom: 37px;
+    background: #6eeee4;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 36px;
+    border-radius: 2px;
+    border: 0; }
+    .contact-form button a {
+      font-size: 18px;
+      font-family: "Montserrat";
+      color: rgba(0, 0, 0, 0.702);
+      text-transform: uppercase;
+      line-height: 1.556;
+      text-decoration: none; }
+
+.adress {
+  max-width: 482px;
+  background: #021623;
+  opacity: 0.71;
+  box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12); }
+  .adress p {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.702);
+    line-height: 1.6; }
