@@ -412,26 +412,52 @@ main p {
   .carousel-block .stars {
     text-align: center; }
 
-.carousel-control.prev, .carousel-control.next {
-  background: none;
-  border: none;
-  color: #b2b2b2 !important; }
-
-.carousel-control {
-  display: block !important;
-  position: initial !important;
-  float: right; }
-
-.control-block {
+.control-block-1 {
   width: 53px;
   height: 53px;
   background: white;
   border-radius: 3px;
-  box-shadow: 0px 8px 11px 0px rgba(20, 20, 21, 0.05); }
+  box-shadow: 0px 8px 11px 0px rgba(20, 20, 21, 0.05);
+  position: relative; }
+  .control-block-1:hover {
+    background: #70f6eb; }
+
+.carousel-control {
+  width: 53px;
+  height: 53px; }
 
 .fa-chevron-left, .fa-chevron-right {
-  font-size: 55px;
-  color: #000;
+  font-size: 25px;
+  color: #b2b2b2;
   opacity: 0.302;
   width: 14px;
-  height: 15px; }
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+  .fa-chevron-left:hover, .fa-chevron-right:hover {
+    color: #000; }
+
+.control-block {
+  display: flex;
+  width: 100%;
+  justify-content: end; }
+
+.control-block-r {
+  order: 2; }
+
+.control-block-l {
+  order: 1;
+  margin-right: 30px; }
+
+.partners {
+  background: #fff;
+  padding-top: 108px;
+  padding-bottom: 104px; }
+
+.contact {
+  background: url(../images/Bg-copy-4.png);
+  padding-top: 122px;
+  padding-bottom: 124px; }
