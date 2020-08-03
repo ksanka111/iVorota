@@ -137,18 +137,26 @@ main p {
 
 .service-wrap {
   display: grid;
-  grid-auto-rows: minmax(422px, auto);
+  grid-template-rows: 422px 370px 370px;
   grid-gap: 14px; }
+
+figure:hover .mask-2 {
+  width: 100%; }
 
 .mask {
   background: rgba(0, 0, 0, 0.6);
-  padding: 180px 0 54px 60px; }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
   .mask a {
     font-size: 18px;
     font-family: "Raleway";
     color: rgba(249, 251, 251, 0.902);
     text-transform: uppercase;
-    text-align: left; }
+    text-align: left;
+    text-decoration: none; }
   .mask p {
     font-size: 16px;
     font-family: "Raleway";
@@ -164,131 +172,68 @@ main p {
     line-height: 1.45;
     text-align: left; }
 
-.service1 {
-  grid-column-start: 1;
-  grid-column-end: 14;
-  background: url(../images/6.png) no-repeat;
+.mask-text {
+  margin-top: 125px;
+  margin-left: 68px; }
+
+.mask-2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #71f6eb;
+  transition: width 1.5s cubic-bezier(0, 0, 1, 1) 500ms; }
+  .mask-2 h2 {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.831);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.45;
+    text-align: left; }
+  .mask-2 p {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.749);
+    line-height: 1.75;
+    text-align: left; }
+
+.service {
   background-size: contain;
   transition: all 0.3s ease;
   position: relative; }
 
-.service1:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 422px;
-  background: #71f5ea;
-  transition: all 1.5s ease; }
+.service1, .service3 {
+  grid-column-start: 1;
+  grid-column-end: 14; }
 
-.service1:hover:before {
-  width: 100%; }
+.service1 {
+  background: url(../images/6.png) no-repeat; }
+
+.service2, .service4 {
+  grid-column-start: 14;
+  grid-column-end: 23; }
 
 .service2 {
-  grid-column-start: 14;
-  grid-column-end: 23;
-  background: url(../images/img3.png) no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
-  position: relative; }
-
-.service2:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 422px;
-  background: #71f5ea;
-  transition: all 1.5s ease; }
-
-.service2:hover:before {
-  width: 100%; }
+  background: url(../images/img3.png) no-repeat; }
 
 .service3 {
-  grid-column-start: 1;
-  grid-column-end: 14;
-  background: url(../images/2.png) no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
-  position: relative; }
-
-.service3:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 422px;
-  background: #71f5ea;
-  transition: all 1.5s ease; }
-
-.service3:hover:before {
-  width: 100%; }
+  background: url(../images/2.png) no-repeat; }
 
 .service4 {
-  grid-column-start: 14;
-  grid-column-end: 23;
-  background: url(../images/4.png) no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
-  position: relative; }
-
-.service4:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 422px;
-  background: #71f5ea;
-  transition: all 1.5s ease; }
-
-.service4:hover:before {
-  width: 100%; }
+  background: url(../images/4.png) no-repeat; }
 
 .service5 {
   grid-column-start: 1;
   grid-column-end: 11;
-  background: url(../images/5.png) no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
-  position: relative; }
-
-.service5:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 422px;
-  background: #71f5ea;
-  transition: all 1.5s ease; }
-
-.service5:hover:before {
-  width: 100%; }
+  background: url(../images/5.png) no-repeat; }
 
 .service6 {
   grid-column-start: 11;
   grid-column-end: 23;
-  background: url(../images/1.png) no-repeat;
-  background-size: contain;
-  transition: all 0.3s ease;
-  position: relative; }
-
-.service6:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 422px;
-  background: #71f5ea;
-  transition: all 1.5s ease; }
-
-.service6:hover:before {
-  width: 100%; }
+  background: url(../images/1.png) no-repeat; }
 
 .team {
   background: #fff;
