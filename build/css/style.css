@@ -542,3 +542,44 @@ main p {
     .adress .style1 iframe {
       width: 450px;
       height: 225px; }
+
+.social-block {
+  background: #262b2e;
+  padding-top: 87px;
+  padding-bottom: 83px; }
+  .social-block h4 {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.563;
+    margin-bottom: 16px; }
+  .social-block p {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.563;
+    text-align: center; }
+
+table {
+  max-width: 205px;
+  margin: 0 auto 40px;
+  width: 205px;
+  text-align: center; }
+
+.fa-steck {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em !important;
+  vertical-align: middle !important; }
+
+.fa-stack-2x {
+  color: #424648; }
+  .fa-stack-2x:hover {
+    color: #6eeee4; }
+
+.fa-stack-1x {
+  color: #bbb8b9; }
+  .fa-stack-1x:hover {
+    color: #070e0d; }
