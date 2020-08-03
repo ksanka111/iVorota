@@ -457,6 +457,22 @@ main p {
   padding-top: 108px;
   padding-bottom: 104px; }
 
+.partner img {
+  width: 110px; }
+
+.partner-1, .partner-3 {
+  position: relative; }
+  .partner-1 img, .partner-3 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+
+.partners-wrapper, .partners-wrapper-2 {
+  display: flex;
+  justify-content: space-around; }
+
 .contact {
   padding-top: 122px;
   padding-bottom: 124px;
@@ -468,7 +484,7 @@ main p {
   justify-content: space-between; }
 
 .contact-form {
-  max-width: 598px;
+  width: 598px;
   background: #021623;
   opacity: 0.71;
   box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12); }
@@ -510,9 +526,19 @@ main p {
   max-width: 482px;
   background: #021623;
   opacity: 0.71;
-  box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12); }
+  box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+  padding: 33px 22px 17px 22px; }
   .adress p {
     font-size: 15px;
     font-family: "Raleway";
     color: rgba(255, 255, 255, 0.702);
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin-bottom: 0; }
+  .adress .margin-mail {
+    margin-bottom: 21px; }
+  .adress .style1 {
+    overflow: hidden;
+    max-width: 100%; }
+    .adress .style1 iframe {
+      width: 450px;
+      height: 225px; }
