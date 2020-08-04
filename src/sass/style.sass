@@ -1,15 +1,15 @@
-header, main, footer 
+header, main, footer
     max-width: 1440px
     margin: 0 auto
 
-body 
+body
     background: #282828 !important
     // font-family: 'Merriweather', serif
     // font-family: 'Montserrat', sans-serif
     // font-family: 'Raleway', sans-serif
 
 header
-    background: #eff0f2 
+    background: #eff0f2
 
 .container
     max-width: 1140px !important
@@ -42,7 +42,7 @@ header
 .button-wrapper
     padding-bottom: 190px
 
-    .btn-contact 
+    .btn-contact
         border-width: 2px
         border-color: #777879
         border-style: solid
@@ -60,7 +60,6 @@ header
             color: rgba(0, 0, 0, 0.749)
             text-transform: uppercase
             line-height: 1.556
-
 
 .wrap-img
     position: absolute
@@ -100,7 +99,7 @@ main
         line-height: 1.4
         margin-bottom: 28px
 
-    p 
+    p
         font-size: 16px
         font-family: "Raleway"
         color: rgba(0, 0, 0, 0.741)
@@ -109,19 +108,19 @@ main
 
 #carouselExampleCaptions
     width: 470px
-    padding-bottom: 40px 
+    padding-bottom: 40px
 
 .carousel-indicators li
     width: 10px !important
     height: 10px !important
-    border-radius: 3px  
+    border-radius: 3px
     background-color: rgb(207, 207, 207) !important
     border: none !important
 
     &:hover
         background-color: rgb(113, 246, 235) !important
 
-.block-text-about 
+.block-text-about
     width: 480px
 
 // Page works
@@ -136,11 +135,10 @@ main
     grid-gap: 16px
     padding-bottom: 125px
 
-.work1 img 
+.work1 img
     width: 100%
     height: 100%
     object-fit: cover
-
 
 // Page services
 
@@ -157,8 +155,8 @@ main
     grid-gap: 14px
 
 figure:hover .mask-2
-    width: 100%
-
+    transform: translateX(0)
+    transition: .7s cubic-bezier(0, 0, 1, 1)
 
 .mask
     background: rgba(0, 0, 0, 0.6)
@@ -168,21 +166,21 @@ figure:hover .mask-2
     left: 0
     right: 0
 
-    a 
+    a
         font-size: 18px
         font-family: "Raleway"
         color: rgba(249, 251, 251, 0.902)
         text-transform: uppercase
         text-align: left
         text-decoration: none
-    
-    p 
+
+    p
         font-size: 16px
         font-family: "Raleway"
         color: rgba(255, 255, 255, 0.902)
         line-height: 1.563
         text-align: left
-    h3 
+    h3
         font-size: 20px
         font-family: "Merriweather"
         color: rgba(255, 255, 255, 0.949)
@@ -196,15 +194,15 @@ figure:hover .mask-2
     margin-left: 68px
 
 .mask-2
-    display: none
+    display: block
     position: absolute
     top: 0
     bottom: 0
     left: 0
-    right: 0 
+    right: 0
+    transform: translateX(-100%)
     background: rgb(113, 246, 235)
-    transition: width 1.5s cubic-bezier(0, 0, 1, 1) 500ms
-
+    transition: .7s cubic-bezier(0, 0, 1, 1)
 
     h2
         font-size: 20px
@@ -222,14 +220,18 @@ figure:hover .mask-2
         line-height: 1.75
         text-align: left
 
+    .mask-2-text
+        margin: 58px 110px auto 63px
+
 .service
     background-size: contain
     transition: all 0.3s ease
     position: relative
+    overflow: hidden
 
 .service1, .service3,
     grid-column-start: 1
-    grid-column-end: 14  
+    grid-column-end: 14
 
 .service1
     background: url(../images/6.png) no-repeat
@@ -256,7 +258,6 @@ figure:hover .mask-2
     grid-column-end: 23
     background: url(../images/1.png) no-repeat
 
-
 // Page Team
 
 .team
@@ -272,13 +273,12 @@ figure:hover .mask-2
 .img-team
     position: relative
 
-
 .img-team:hover .block-quote
     display: block
 
 .img-team-1
     background: url(../images/Photo-1.png)
-    
+
 .img-team-2
     background: url(../images/Photo-2.png)
 
@@ -320,12 +320,11 @@ figure:hover .mask-2
         font-style: oblique
         text-transform: initial
         font-weight: normal
-    p 
+    p
         font-size: 16px
         font-family: "Raleway"
         color: rgba(0, 0, 0, 0.8)
         line-height: 1.5
-    
 
 .quote
     position: absolute
@@ -387,6 +386,7 @@ figure:hover .mask-2
 
     i
         color: rgb(242, 218, 59)
+
     .stars
         text-align: center
 
@@ -401,21 +401,24 @@ figure:hover .mask-2
     &:hover
         background: #70f6eb
 
-.carousel-control
-    width: 53px
-    height: 53px
+    .carousel-control
+        width: 53px
+        height: 53px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
 
-    
+.control-block-1:hover i
+    color: #000
+
 .fa-chevron-left, .fa-chevron-right
     font-size: 25px
     color: #b2b2b2
     opacity: 0.302
-    width: 14px
-    height: 15px
     position: absolute
     top: 50%
     left: 50%
-    margin-right: -50%
     transform: translate(-50%, -50%)
 
     &:hover
@@ -424,7 +427,7 @@ figure:hover .mask-2
 .control-block
     display: flex
     width: 100%
-    justify-content: end
+    justify-content: flex-end
 
 .control-block-r
     order: 2
@@ -440,23 +443,28 @@ figure:hover .mask-2
     padding-top: 108px
     padding-bottom: 104px
 
-.partner 
-    img 
-        width: 110px
-
-.partner-1, .partner-3
-    position: relative
+.partner
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 80px
 
     img
-        position: absolute
-        top: 50%
-        left: 50%
-        margin-right: -50%
-        transform: translate(-50%, -50%)
+        width: 110px
 
-.partners-wrapper, .partners-wrapper-2
+.partners-wrapper
+    margin-bottom: 60px
+
+.partners-wrapper
     display: flex
-    justify-content: space-around
+    justify-content: center
+
+.partners-wrapper-2
+    display: flex
+    justify-content: space-between
+
+.last
+    margin-right: 0 !important
 
 // Page Conacts
 
@@ -475,8 +483,8 @@ figure:hover .mask-2
     background: rgb(2, 22, 35)
     opacity: 0.71
     box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12)
-    padding: 
-    
+    padding:
+
     form
         display: flex
         flex-direction: column
@@ -491,9 +499,9 @@ figure:hover .mask-2
         border-left: 0
         border-top: 0
         border-right: 0
-    
+
     textarea, .button, input
-        background: rgb(2, 22, 35) 
+        background: rgb(2, 22, 35)
 
     textarea
         height: 137px
@@ -518,8 +526,7 @@ figure:hover .mask-2
 
 .adress
     max-width: 482px
-    background: rgb(2, 22, 35)
-    opacity: 0.71
+    background: rgba(2, 22, 35, 0.71)
     box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12)
     padding: 33px 22px 17px 22px
 
@@ -534,7 +541,7 @@ figure:hover .mask-2
         margin-bottom: 21px
 
     .style1
-        overflow: hidden  
+        overflow: hidden
         max-width: 100%
 
         iframe
@@ -543,10 +550,8 @@ figure:hover .mask-2
 
 // Page Social
 
-.social-block
-    background: rgb(38, 43, 46)
-    padding-top: 87px
-    padding-bottom: 83px
+.social-block-wrap
+    padding-top: 89px
 
     h4
         font-size: 16px
@@ -555,42 +560,39 @@ figure:hover .mask-2
         line-height: 1.563
         margin-bottom: 16px
 
-    p 
+    p
         font-size: 16px
         font-family: "Raleway"
         color: rgba(255, 255, 255, 0.4)
         line-height: 1.563
         text-align: center
+        margin-bottom: 89px
 
-table 
-    max-width: 205px
-    margin: 0 auto 40px
-    width: 205px
-    text-align: center
+.social-links-wrapper
+    display: flex
+    justify-content: center
+    margin-bottom: 37px
 
-.fa-steck
-    position: relative
-    display: inline-block
-    width: 2em
-    height: 2em
-    line-height: 2em !important
-    vertical-align: middle !important
+    .social-block
+        background: #424648
+        width: 45px
+        height: 45px
+        margin-right: 16px
+        display: flex
+        align-items: center
+        justify-content: center
 
-.fa-stack-2x
-    color: #424648
+        i
+            color: #bbb8b9
 
-    &:hover
-        color: #6eeee4
+        &:hover
+            background: #6eeee4
+            transition: all 0.35s ease
+            cursor: pointer
 
-.fa-stack-1x
-    color: #bbb8b9
+        &:last-child
+            margin-right: 0
 
-    &:hover
+    .social-block:hover i
         color: #070e0d
-
-
-
-        
-    
-
-
+        transition: all 0.35s ease

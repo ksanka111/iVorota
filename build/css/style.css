@@ -141,7 +141,8 @@ main p {
   grid-gap: 14px; }
 
 figure:hover .mask-2 {
-  width: 100%; }
+  transform: translateX(0);
+  transition: 0.7s cubic-bezier(0, 0, 1, 1); }
 
 .mask {
   background: rgba(0, 0, 0, 0.6);
@@ -177,14 +178,15 @@ figure:hover .mask-2 {
   margin-left: 68px; }
 
 .mask-2 {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  transform: translateX(-100%);
   background: #71f6eb;
-  transition: width 1.5s cubic-bezier(0, 0, 1, 1) 500ms; }
+  transition: 0.7s cubic-bezier(0, 0, 1, 1); }
   .mask-2 h2 {
     font-size: 20px;
     font-family: "Merriweather";
@@ -199,11 +201,14 @@ figure:hover .mask-2 {
     color: rgba(0, 0, 0, 0.749);
     line-height: 1.75;
     text-align: left; }
+  .mask-2 .mask-2-text {
+    margin: 58px 110px auto 63px; }
 
 .service {
   background-size: contain;
   transition: all 0.3s ease;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .service1, .service3 {
   grid-column-start: 1;
@@ -366,21 +371,24 @@ figure:hover .mask-2 {
   position: relative; }
   .control-block-1:hover {
     background: #70f6eb; }
+  .control-block-1 .carousel-control {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
-.carousel-control {
-  width: 53px;
-  height: 53px; }
+.control-block-1:hover i {
+  color: #000; }
 
 .fa-chevron-left, .fa-chevron-right {
   font-size: 25px;
   color: #b2b2b2;
   opacity: 0.302;
-  width: 14px;
-  height: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%); }
   .fa-chevron-left:hover, .fa-chevron-right:hover {
     color: #000; }
@@ -388,7 +396,7 @@ figure:hover .mask-2 {
 .control-block {
   display: flex;
   width: 100%;
-  justify-content: end; }
+  justify-content: flex-end; }
 
 .control-block-r {
   order: 2; }
@@ -402,21 +410,27 @@ figure:hover .mask-2 {
   padding-top: 108px;
   padding-bottom: 104px; }
 
-.partner img {
-  width: 110px; }
-
-.partner-1, .partner-3 {
-  position: relative; }
-  .partner-1 img, .partner-3 img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); }
-
-.partners-wrapper, .partners-wrapper-2 {
+.partner {
   display: flex;
-  justify-content: space-around; }
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px; }
+  .partner img {
+    width: 110px; }
+
+.partners-wrapper {
+  margin-bottom: 60px; }
+
+.partners-wrapper {
+  display: flex;
+  justify-content: center; }
+
+.partners-wrapper-2 {
+  display: flex;
+  justify-content: space-between; }
+
+.last {
+  margin-right: 0 !important; }
 
 .contact {
   padding-top: 122px;
@@ -469,8 +483,7 @@ figure:hover .mask-2 {
 
 .adress {
   max-width: 482px;
-  background: #021623;
-  opacity: 0.71;
+  background: rgba(2, 22, 35, 0.71);
   box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
   padding: 33px 22px 17px 22px; }
   .adress p {
@@ -488,43 +501,42 @@ figure:hover .mask-2 {
       width: 450px;
       height: 225px; }
 
-.social-block {
-  background: #262b2e;
-  padding-top: 87px;
-  padding-bottom: 83px; }
-  .social-block h4 {
+.social-block-wrap {
+  padding-top: 89px; }
+  .social-block-wrap h4 {
     font-size: 16px;
     font-family: "Raleway";
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.563;
     margin-bottom: 16px; }
-  .social-block p {
+  .social-block-wrap p {
     font-size: 16px;
     font-family: "Raleway";
     color: rgba(255, 255, 255, 0.4);
     line-height: 1.563;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 89px; }
 
-table {
-  max-width: 205px;
-  margin: 0 auto 40px;
-  width: 205px;
-  text-align: center; }
-
-.fa-steck {
-  position: relative;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em !important;
-  vertical-align: middle !important; }
-
-.fa-stack-2x {
-  color: #424648; }
-  .fa-stack-2x:hover {
-    color: #6eeee4; }
-
-.fa-stack-1x {
-  color: #bbb8b9; }
-  .fa-stack-1x:hover {
-    color: #070e0d; }
+.social-links-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 37px; }
+  .social-links-wrapper .social-block {
+    background: #424648;
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .social-links-wrapper .social-block i {
+      color: #bbb8b9; }
+    .social-links-wrapper .social-block:hover {
+      background: #6eeee4;
+      transition: all 0.35s ease;
+      cursor: pointer; }
+    .social-links-wrapper .social-block:last-child {
+      margin-right: 0; }
+  .social-links-wrapper .social-block:hover i {
+    color: #070e0d;
+    transition: all 0.35s ease; }
