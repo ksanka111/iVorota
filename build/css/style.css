@@ -332,10 +332,12 @@ figure:hover .mask-2 {
   width: 93%;
   height: 240px;
   background: #70f6eb;
-  padding-top: 39px; }
+  padding-top: 39px;
+  padding-left: 15px; }
   @media screen and (max-width: 768px) {
     .block-quote {
-      width: 40%; } }
+      width: 40%;
+      padding-top: 15px; } }
 
 .quote-text h3 {
   font-size: 20px;
@@ -345,7 +347,11 @@ figure:hover .mask-2 {
   line-height: 1.2; }
   @media screen and (max-width: 768px) {
     .quote-text h3 {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      font-size: 16px; } }
+  @media screen and (max-width: 356px) {
+    .quote-text h3 {
+      font-size: 15px; } }
 
 .quote-text span {
   color: #757776;
@@ -354,15 +360,26 @@ figure:hover .mask-2 {
   font-style: oblique;
   text-transform: initial;
   font-weight: normal; }
+  @media screen and (max-width: 768px) {
+    .quote-text span {
+      font-size: 16px; } }
+  @media screen and (max-width: 356px) {
+    .quote-text span {
+      font-size: 15px; } }
 
 .quote-text p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Raleway";
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5; }
   @media screen and (max-width: 768px) {
     .quote-text p {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.2; } }
+  @media screen and (max-width: 356px) {
+    .quote-text p {
+      font-size: 12px; } }
 
 .quote {
   position: absolute;
