@@ -83,6 +83,9 @@ main h4 {
   line-height: 1.556;
   text-align: center;
   margin-bottom: 125px; }
+  @media screen and (max-width: 1000px) {
+    main h4 {
+      margin-bottom: 100px; } }
 
 main h3 {
   font-size: 20px;
@@ -115,16 +118,23 @@ main p {
 
 .block-text-about {
   max-width: 480px; }
+  @media screen and (max-width: 1000px) {
+    .block-text-about {
+      max-width: 90%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 1000px) {
+    .block-text-about {
+      text-align: center; } }
 
 .works {
   padding-top: 127px;
+  padding-bottom: 125px;
   background-color: #fff; }
 
 .works-wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
-  padding-bottom: 125px; }
+  grid-gap: 16px; }
 
 .work1 img {
   width: 100%;
@@ -141,6 +151,13 @@ main p {
   grid-template-rows: 422px 370px 370px;
   grid-gap: 14px;
   grid-template-columns: repeat(24, 1fr); }
+  @media screen and (max-width: 1024px) {
+    .service-wrap {
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: minmax(422px, auto); }
+      .service-wrap .service {
+        grid-column: 1/-1;
+        background-position: center center; } }
 
 figure:hover .mask-2 {
   transform: translateX(0);
@@ -166,6 +183,9 @@ figure:hover .mask-2 {
     color: rgba(255, 255, 255, 0.902);
     line-height: 1.563;
     text-align: left; }
+    @media screen and (max-width: 571px) {
+      .mask p {
+        margin-bottom: 30px; } }
   .mask h3 {
     font-size: 20px;
     font-family: "Merriweather";
@@ -178,6 +198,14 @@ figure:hover .mask-2 {
 .mask-text {
   margin-top: 125px;
   margin-left: 68px; }
+  @media screen and (max-width: 855px) {
+    .mask-text {
+      margin-top: 100px;
+      margin-left: 30px;
+      margin-right: 20px; } }
+  @media screen and (max-width: 697px) {
+    .mask-text {
+      margin-top: 58px; } }
 
 .mask-2 {
   display: block;
@@ -203,8 +231,16 @@ figure:hover .mask-2 {
     color: rgba(0, 0, 0, 0.749);
     line-height: 1.75;
     text-align: left; }
+    @media screen and (max-width: 400px) {
+      .mask-2 p {
+        font-size: 14px;
+        line-height: 1.6; } }
   .mask-2 .mask-2-text {
     margin: 58px 110px auto 63px; }
+    @media screen and (max-width: 697px) {
+      .mask-2 .mask-2-text {
+        margin-left: 30px;
+        margin-right: 20px; } }
 
 .service {
   background-size: contain;
@@ -252,6 +288,17 @@ figure:hover .mask-2 {
   grid-auto-rows: minmax(440px, auto);
   grid-gap: 18px;
   grid-template-columns: repeat(3, 1fr); }
+  @media screen and (max-width: 1140px) {
+    .team-photo-wrapper {
+      grid-template-columns: repeat(2, 1fr); } }
+  .team-photo-wrapper .img-team {
+    background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .team-photo-wrapper {
+      grid-template-columns: repeat(1, 1fr); } }
+  .team-photo-wrapper .img-team {
+    background-size: cover;
+    background-position: center top; }
 
 .img-team {
   position: relative; }
@@ -282,11 +329,13 @@ figure:hover .mask-2 {
   position: absolute;
   left: 16px;
   bottom: 13px;
-  width: 336px;
+  width: 93%;
   height: 240px;
   background: #70f6eb;
-  padding-top: 39px;
-  padding-left: 36px; }
+  padding-top: 39px; }
+  @media screen and (max-width: 768px) {
+    .block-quote {
+      width: 40%; } }
 
 .quote-text h3 {
   font-size: 20px;
@@ -294,6 +343,9 @@ figure:hover .mask-2 {
   color: rgba(39, 39, 39, 0.949);
   font-weight: bold;
   line-height: 1.2; }
+  @media screen and (max-width: 768px) {
+    .quote-text h3 {
+      margin-bottom: 20px; } }
 
 .quote-text span {
   color: #757776;
@@ -308,6 +360,9 @@ figure:hover .mask-2 {
   font-family: "Raleway";
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5; }
+  @media screen and (max-width: 768px) {
+    .quote-text p {
+      margin-bottom: 20px; } }
 
 .quote {
   position: absolute;
@@ -326,6 +381,9 @@ figure:hover .mask-2 {
 
 .quote-social {
   margin-bottom: 40px; }
+  @media screen and (max-width: 768px) {
+    .quote-social {
+      margin-bottom: 20px; } }
   .quote-social i {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.702);
@@ -416,16 +474,19 @@ figure:hover .mask-2 {
 .partner {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 128.8px; }
   .partner img {
     width: 110px; }
 
 .partners-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px; }
+  margin-bottom: 20px; }
   .partners-wrapper .last {
     margin-right: 80px; }
+  .partners-wrapper .last-2 {
+    margin-right: 0; }
 
 .partners-wrapper-2 {
   display: flex;
@@ -537,9 +598,10 @@ figure:hover .mask-2 {
       cursor: pointer; }
     .social-links-wrapper .social-block:last-child {
       margin-right: 0; }
-  .social-links-wrapper .social-block:hover i {
-    color: #070e0d;
-    transition: all 0.35s ease; }
+
+.social-block:hover i {
+  color: #070e0d;
+  transition: all 0.35s ease; }
 
 @media (max-width: 1100px) {
   .carousel-block {
@@ -550,9 +612,13 @@ figure:hover .mask-2 {
     display: none; }
   .wrap-about-page {
     display: block !important; }
-  .block-text-about {
-    max-width: 100%;
-    margin: 0 20px; } }
+  .partners-wrapper-2 {
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap; }
+  .partner img {
+    width: 80px; } }
 
 @media (max-width: 925px) {
   .d-block {
@@ -571,7 +637,7 @@ figure:hover .mask-2 {
   .contact-form {
     margin-right: 0; }
   .style1 iframe {
-    max-width: 100% !important; }
+    width: 100% !important; }
   .adress-wrapper {
     display: flex;
     justify-content: space-between; }
@@ -583,8 +649,6 @@ figure:hover .mask-2 {
 @media (max-width: 770px) {
   .last {
     margin-right: 40px !important; }
-  .partners-wrapper-2 {
-    display: none; }
   textarea {
     height: 100px !important; } }
 
@@ -597,8 +661,12 @@ figure:hover .mask-2 {
     padding-bottom: 100px; }
   main h4 {
     margin-bottom: 80px; }
-  .about-page {
-    padding-bottom: 100px; }
+  .about-page, .works,
+  .service, .team,
+  .reviews, .partners,
+  .contact {
+    padding-bottom: 100px;
+    padding-top: 100px; }
   .works-wrap {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px; }
@@ -609,8 +677,12 @@ figure:hover .mask-2 {
     display: flex;
     justify-content: center;
     margin-bottom: 15px; }
-  .partners-wrapper {
-    margin-bottom: 0 !important; }
+  .control-block {
+    justify-content: center; }
+  .partners-wrapper-2 {
+    flex-wrap: wrap; }
+  .logo-mr {
+    margin-right: 20px; }
   input {
     line-height: 2.2 !important; }
   .adress-wrapper {
@@ -622,6 +694,13 @@ figure:hover .mask-2 {
     text-align: center; }
   .adress-mail p {
     text-align: center; } }
+
+@media (max-width: 650px) {
+  .last {
+    margin-right: 20px !important; }
+  .partners-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 0; } }
 
 @media (max-width: 570px) {
   .heading {
@@ -638,13 +717,15 @@ figure:hover .mask-2 {
     margin-bottom: 70px; }
   .button-wrapper {
     padding-bottom: 70px; }
-  .about-page {
-    padding-bottom: 70px; }
-  .partners-wrapper {
-    flex-direction: column; }
-    .partners-wrapper .last {
-      margin-bottom: 15px;
-      margin-right: 0 !important; }
+  .about-page, .works,
+  .service, .team,
+  .reviews, .partners,
+  .contact {
+    padding-bottom: 70px;
+    padding-top: 70px; }
+  .control-block-1 {
+    width: 43px;
+    height: 43px; }
   button {
     padding: 8px 18px !important; }
   .p-adress {

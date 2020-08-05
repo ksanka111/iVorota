@@ -141,10 +141,13 @@ main p {
   grid-template-rows: 422px 370px 370px;
   grid-gap: 14px;
   grid-template-columns: repeat(24, 1fr); }
-
-@media screen and (max-width: 1024px) {
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(422px, auto); }
+  @media screen and (max-width: 1024px) {
+    .service-wrap {
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: minmax(422px, auto); }
+      .service-wrap .service {
+        grid-column: 1/-1;
+        background-position: center center; } }
 
 figure:hover .mask-2 {
   transform: translateX(0);
@@ -182,10 +185,6 @@ figure:hover .mask-2 {
 .mask-text {
   margin-top: 125px;
   margin-left: 68px; }
-  @media screen and (max-width: 845px) {
-    .mask-text {
-      margin-top: 70px !important;
-      margin-left: 20px !important; } }
 
 .mask-2 {
   display: block;
@@ -205,19 +204,12 @@ figure:hover .mask-2 {
     text-transform: uppercase;
     line-height: 1.45;
     text-align: left; }
-    @media screen and (max-width: 845px) {
-      .mask-2 h2 {
-        font-size: 16px; } }
   .mask-2 p {
     font-size: 16px;
     font-family: "Raleway";
     color: rgba(0, 0, 0, 0.749);
     line-height: 1.75;
     text-align: left; }
-    @media screen and (max-width: 845px) {
-      .mask-2 p {
-        line-height: 1.2;
-        font-size: 14px; } }
   .mask-2 .mask-2-text {
     margin: 58px 110px auto 63px; }
 
@@ -227,10 +219,6 @@ figure:hover .mask-2 {
   position: relative;
   overflow: hidden;
   background-size: cover !important; }
-  @media screen and (max-width: 845px) {
-    .service {
-      grid-column: 1/-1;
-      background-position: center center; } }
 
 .service1, .service3 {
   grid-column-start: 1;
@@ -273,14 +261,15 @@ figure:hover .mask-2 {
   grid-template-columns: repeat(3, 1fr); }
   @media screen and (max-width: 1140px) {
     .team-photo-wrapper {
-      grid-template-columns: repeat(2, 1fr); } }
-  .team-photo-wrapper .img-team {
-    background-size: cover; }
+      grid-template-columns: repeat(2, 1fr); }
+      .team-photo-wrapper .img-team {
+        background-size: cover; } }
   @media screen and (max-width: 768px) {
     .team-photo-wrapper {
-      grid-template-columns: repeat(1, 1fr); } }
-  .team-photo-wrapper .img-team {
-    background-size: cover; }
+      grid-template-columns: repeat(1, 1fr); }
+      .team-photo-wrapper .img-team {
+        background-size: cover;
+        background-position: center top; } }
 
 .img-team {
   position: relative; }
