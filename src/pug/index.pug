@@ -1,0 +1,242 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel="stylesheet" href="css/style.css")
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+    title iVorota
+
+  body
+    header
+      .top-bar
+        .container
+          .row.justify-content-end
+            .top-bar-mnu.d-flex.justify-content-around.flex-wrap
+              a.nav-item.nav-link.active(href='#')
+                | Покупателям
+                span.sr-only (current)
+              a.nav-item.nav-link(href='#') О компании
+              a.nav-item.nav-link(href='#') Галерея работ 
+              a.nav-item.nav-link(href='#') Контакты       
+              a.nav-item.nav-link(href='#') FAQ   
+      .navigation.sticky-top.d-none.d-md-none.d-lg-block
+        nav.middle-bar.d-none.d-md-none.d-lg-block
+          .container
+            .row
+              .col-md-3
+                a.navbar-brand.active(href='index.html') iVorota
+              .col-md-3
+                .phone-wrap.wrap-flex
+                  .icon
+                    i.fa.fa-phone
+                  span.phone
+                    a(href="tel:+375296453037") +375 29 645 30 37
+                .time-wrap.wrap-flex
+                  .icon
+                    i.far.fa-clock
+                    span.time Ежедневно с 09:00 до 21:00
+              .col-md-3
+                .middle-mnu.flex-wrap.d-flex
+                  a.nav-item.nav-link(href='catalog.html')
+                    | Каталог
+                    span.sr-only (current)
+                  a.nav-item.nav-link(href='services.html')
+                    | Услуги
+                    span.sr-only (current)
+                  a.nav-item.nav-link(href='#')
+                    | Меню
+                    span.sr-only (current)
+              .col-md-3
+                .main-btn-wrap.text-nowrap
+                  a.popup-callback-btn(href="#popup-callback-form") Заказать звонок
+      .main-wrap
+        .main-bg
+          .wrap
+            h1.mb-4 Производство и монтаж откатных ворот
+            ul.d-lg-block
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text Выбор оптимального решения с учетом требований и особенностей 
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text Сертифицированный дистрибьютор ведущих производителей
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text Собственное производство и склад
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text “Гарантия лучшей цены” - о чем молчат в компаниях                 
+            span.info Вызовите специалиста на объект в удобное для вас время. Эта услуга бесплатная
+            .main-btn-wrap 
+              a.popup-callback-btn(href="#popup-callback-form") Оставить заявку
+      section.section-1 
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Каталог продукции
+                hr
+            .card-deck
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Откатные ворота
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .card-footer
+                  small.text-muted от 2000
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Калитки
+                  p.card-text This card has supporting text below as a natural lead-in to additional content.
+                .card-footer
+                  small.text-muted от 200
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Автоматика
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                .card-footer
+                  small.text-muted от 400
+      section.section-2 
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Наши услуги
+            .card-deck
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Сервис и ремонт
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Замер
+                  p.card-text This card has supporting text below as a natural lead-in to additional content.
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Монтаж и демонтаж
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      section.section-3
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Каждый клиент получает
+              .col-sm-6.mb-3
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 1
+                      h5.card-title Консультация и замер бесплатно
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+              .col-sm-6.mb-3
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 2
+                      h5.card-title Оптимальная стоимость
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+              .col-sm-6
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 3
+                      h5.card-title Помощь в выборе материалов
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+              .col-sm-6
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 4
+                      h5.card-title Уборка территории
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+      section.section-4
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Несколько шагов до Ваших ворот
+              .card-group
+                .card
+                  img.card-img-top(src='/images/chat_106702.png' alt='Консультация')
+                  .card-body
+                    h5.card-title Консультация
+                    p.card-text
+                      | Позвонив нам Вы получите бесплатную консультацию по выбору материалов и автоматики для ворот. 
+                .card
+                  img.card-img-top(src='/images/mapmarker_106655.png' alt='Замер')
+                  .card-body
+                    h5.card-title Замер
+                    p.card-text This card has supporting text below as a natural lead-in to additional content.
+                .card
+                  img.card-img-top(src='/images/doc_106706.png' alt='Договор')
+                  .card-body
+                    h5.card-title Договор
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                .card
+                  img.card-img-top(src='/images/cog_106690.png' alt='Монтаж')
+                  .card-body
+                    h5.card-title Монтаж
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .card
+                  img.card-img-top(src='/images/shield_106660.png' alt='Результат')
+                  .card-body
+                    h5.card-title Сдача объекта
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.      
+      section.section-4
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Наше порфолио
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')   
+      section.section-5
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Мобильный и безопасный офис
+
+
+
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")

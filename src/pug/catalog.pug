@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel="stylesheet" href="css/style.css")
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+    title My Diploma
+
+  body
+    header
+      .navigation.sticky-top
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+          .container
+            .row
+              .col-md-3
+                a.navbar-brand.active(href='index.html') iVorota
+              .col-md-3
+                .phone-wrap.wrap-flex
+                  .icon
+                    i.fa.fa-phone
+                  span.phone
+                    a(href="tel:+375296453037") +375 29 645 30 37
+                .time-wrap.wrap-flex
+                  .icon
+                    i.far.fa-clock
+                    span.time Ежедневно с 09:00 до 21:00
+              .col-md-3 
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+                  span.navbar-toggler-icon   
+                #navbarNavAltMarkup.collapse.navbar-collapse
+                  .navbar-nav
+                    a.nav-item.nav-link(href='catalog.html')
+                      | Каталог
+                      span.sr-only (current)
+                    a.nav-item.nav-link(href='services.html')
+                      | Услуги
+                      span.sr-only (current)
+                    a.nav-item.nav-link(href='#')
+                      | Меню
+                      span.sr-only (current)
+              .col-md-3
+                .main-btn-wrap
+                  a.popup-callback-btn(href="#popup-callback-form") Заказать звонок
+
+
+ 
