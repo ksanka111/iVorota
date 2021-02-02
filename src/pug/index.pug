@@ -5,442 +5,239 @@ html
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     link(rel="stylesheet" href="css/style.css")
     link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
-    link(href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
-    title My Diploma
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+    title iVorota
 
   body
     header
-      .container
-        .navigation
-          nav.navbar.navbar-light
-            a.navbar-brand(href='#')
-              img(src="/images/Logo.png", alt="Logo")
-            button.navbar-toggler(data-target='#navbarsExample01', type='button', data-toggle='collapse', aria-controls='navbarsExample01', aria-expanded='false', aria-label='Toggle navigation')
-              span.navbar-toggler-icon
-            #navbarsExample01.collapse.navbar-collapse
-              ul.navbar-nav.mr-auto
-                li.nav-item.active
-                  a.nav-link(href='#')
-                    | Home
+      .top-bar
+        .container
+          .row.justify-content-end
+            .top-bar-mnu.d-flex.justify-content-around.flex-wrap
+              a.nav-item.nav-link.active(href='#')
+                | Покупателям
+                span.sr-only (current)
+              a.nav-item.nav-link(href='#') О компании
+              a.nav-item.nav-link(href='#') Галерея работ 
+              a.nav-item.nav-link(href='#') Контакты       
+              a.nav-item.nav-link(href='#') FAQ   
+      .navigation.sticky-top.d-none.d-md-none.d-lg-block
+        nav.middle-bar.d-none.d-md-none.d-lg-block
+          .container
+            .row
+              .col-md-3
+                a.navbar-brand.active(href='index.html') iVorota
+              .col-md-3
+                .phone-wrap.wrap-flex
+                  .icon
+                    i.fa.fa-phone
+                  span.phone
+                    a(href="tel:+375296453037") +375 29 645 30 37
+                .time-wrap.wrap-flex
+                  .icon
+                    i.far.fa-clock
+                    span.time Ежедневно с 09:00 до 21:00
+              .col-md-3
+                .middle-mnu.flex-wrap.d-flex
+                  a.nav-item.nav-link(href='catalog.html')
+                    | Каталог
                     span.sr-only (current)
-                li.nav-item
-                  a.nav-link(href='#about') About us
-                li.nav-item
-                  a.nav-link(href='#works') Featured works
-                li.nav-item
-                  a.nav-link(href='#services') Our services
-                li.nav-item
-                  a.nav-link(href='#team') Small team
-                li.nav-item
-                  a.nav-link(href='#reviews') What they says
-                li.nav-item
-                  a.nav-link(href='#partners') Our partners
-                li.nav-item
-                  a.nav-link(href='#contact') Contact us
-          h1.heading Say Hello to
-            span.bg-headihg SHOPNO!
-            br
-            <span class="bg-headihg"> Agency</span> CORPORATE SHOPNO Theme
-          .button-wrapper.d-flex.justify-content-between
-            button.btn-contact(form="contacts")
-              span.btn-text contact us
-            .wrap-img
-              .img-glass
-                img(src="images/JuiceGlass1.png", alt="Juice Glass")
-    main
-      section#about.about-page
-        .container
-          h2 ABOUT US
-          h4 Lorem ipsum dolor sit amet event landing template
-          .wrap-about-page.d-flex.justify-content-between.flex-wrap
-            #carouselExampleCaptions.carousel.slide(data-ride='carousel')
-              ol.carousel-indicators
-                li.active.rounded-circle(data-target='#carouselExampleCaptions', data-slide-to='0')
-                li.rounded-circle(data-target='#carouselExampleCaptions', data-slide-to='1')
-                li.rounded-circle(data-target='#carouselExampleCaptions', data-slide-to='2')
-              .slide-img
-                .carousel-inner
-                  .carousel-item.active
-                    img.img-carousel(src="images/Group_16.png", alt="Group 16")
-                  .carousel-item
-                    img.bg-carousel(src="images/Group_16.png", alt="Rectangle_16")
-                  .carousel-item
-                    img.img-carousel(src="images/Group_16.png", alt="Group 16")
-                  .carousel-item
-                    img.img-carousel(src="images/Group_16.png", alt="Group 16")
-            .block-text-about
-              h3 We Actually Do amazing works
-              p A visual approach is an approach to a runway at an airport
-                |conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
-              p Preceding aircraft in approach correct sight. conducted under instrument flight rules.
-              h3 why we are the great?
-              p.mb-0 Preceding aircraft in approach correct sight. conducted under instrument flight rules.
-
-      section#works.works
-        .container
-          h2 featured works
-          h4 Lorem ipsum dolor sit amet event landing template
-          .works-wrap
-            .work1
-              img(src="images/banner1.png", alt="banner1")
-            .work1
-              img(src="images/banner2.png", alt="banner2")
-            .work1
-              img(src="images/banner3.png", alt="banner3")
-            .work1
-              img(src="images/banner4.png", alt="banner4")
-            .work1
-              img(src="images/banner5.png", alt="banner5")
-            .work1
-              img(src="images/banner6.png", alt="banner6")
-
-      section#services.service
-        .container
-          h2 our services
-          h4 Lorem ipsum dolor sit amet event landing template
-          .service-wrap
-            figure.service.service1.mb-0
-              .mask
-                .mask-text
-                  h3.text-serv Designing is The CooL LOVE FOR.
-                  p.text-mask Our most popular service is our we know
-                    <br> that sometimes it’s something
-                    <br> you moddle most
-                  a(href="#") Know More
-              .mask-2
-                .mask-2-text
-                  h2 Designing is The CooL LOVE FOR.
-                  p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-            figure.service.service2.mb-0
-              .mask
-                .mask-text
-                  h3.text-serv cool psd Design
-                  p.text-mask Our most popular service is our we know
-                    <br> that sometimes it’s something
-                    <br> you moddle most
-                  a(href="#") Know More
-              .mask-2
-                .mask-2-text
-                  h2 Designing is The CooL LOVE FOR.
-                  p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-            figure.service.service3.mb-0
-              .mask
-                .mask-text
-                  h3.text-serv cool psd Design
-                  p.text-mask Our most popular service is our we know
-                    <br> that sometimes it’s something
-                    <br> you moddle most
-                  a(href="#") Know More
-              .mask-2
-                .mask-2-text
-                  h2 Designing is The CooL LOVE FOR.
-                  p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-            figure.service.service4.mb-0
-              .mask
-                .mask-text
-                  h3.text-serv cool psd Design
-                  p.text-mask Our most popular service is our we know
-                    <br> that sometimes it’s something
-                    <br> you moddle most
-                  a(href="#") Know More
-              .mask-2
-                .mask-2-text
-                  h2 Designing is The CooL LOVE FOR.
-                  p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-            figure.service.service5.mb-0
-              .mask
-                .mask-text
-                  h3.text-serv cool psd Design
-                  p.text-mask Our most popular service is our we know
-                    <br> that sometimes it’s something
-                    <br> you moddle most
-                  a(href="#") Know More
-              .mask-2
-                .mask-2-text
-                  h2 Designing is The CooL LOVE FOR.
-                  p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-            figure.service.service6.mb-0
-              .mask
-                .mask-text
-                  h3.text-serv cool psd Design
-                  p.text-mask Our most popular service is our we know
-                    <br> that sometimes it’s something
-                    <br> you moddle most
-                  a(href="#") Know More
-              .mask-2
-                .mask-2-text
-                  h2 Designing is The CooL LOVE FOR.
-                  p Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
-
-      section#team.team
-        .container
-          h2 small team
-          h4 Lorem ipsum dolor sit amet event landing template
-          .team-photo-wrapper
-            .img-team.img-team-1
-              .quote
-              .block-quote
-                .quote-text
-                  h3 AL RAYHAN <span>/ UI Designer</span>
-                  p Lorem Ipsum is not simply is  an
-                    <br> action designer random text
-                    <br> It has roots in a piece
-                .quote-social
-                  a(href="#")
-                    i.fab.fa-facebook-f
-                  a(href="#")
-                    i.fab.fa-twitter
-                  a(href="#")
-                    i.fab.fa-dribbble
-                  a(href="#")
-                    i.far.fa-envelope
-            .img-team.img-team-2
-              .quote
-              .block-quote
-                .quote-text
-                  h3 AL RAYHAN <span>/ UI Designer</span>
-                  p Lorem Ipsum is not simply is  an
-                    <br> action designer random text
-                    <br> It has roots in a piece
-                .quote-social
-                  a(href="#")
-                    i.fab.fa-facebook-f
-                  a(href="#")
-                    i.fab.fa-twitter
-                  a(href="#")
-                    i.fab.fa-dribbble
-                  a(href="#")
-                    i.far.fa-envelope
-            .img-team.img-team-3
-              .quote
-              .block-quote
-                .quote-text
-                  h3 AL RAYHAN <span>/ UI Designer</span>
-                  p Lorem Ipsum is not simply is  an
-                    <br> action designer random text
-                    <br> It has roots in a piece
-                .quote-social
-                  a(href="#")
-                    i.fab.fa-facebook-f
-                  a(href="#")
-                    i.fab.fa-twitter
-                  a(href="#")
-                    i.fab.fa-dribbble
-                  a(href="#")
-                    i.far.fa-envelope
-            .img-team.img-team-4
-              .quote
-              .block-quote
-                .quote-text
-                  h3 AL RAYHAN <span>/ UI Designer</span>
-                  p Lorem Ipsum is not simply is  an
-                    <br> action designer random text
-                    <br> It has roots in a piece
-                .quote-social
-                  a(href="#")
-                    i.fab.fa-facebook-f
-                  a(href="#")
-                    i.fab.fa-twitter
-                  a(href="#")
-                    i.fab.fa-dribbble
-                  a(href="#")
-                    i.far.fa-envelope
-            .img-team.img-team-5
-              .quote
-              .block-quote
-                .quote-text
-                  h3 AL RAYHAN <span>/ UI Designer</span>
-                  p Lorem Ipsum is not simply is  an
-                    <br> action designer random text
-                    <br> It has roots in a piece
-                .quote-social
-                  a(href="#")
-                    i.fab.fa-facebook-f
-                  a(href="#")
-                    i.fab.fa-twitter
-                  a(href="#")
-                    i.fab.fa-dribbble
-                  a(href="#")
-                    i.far.fa-envelope
-            .img-team.img-team-6
-              .quote
-              .block-quote
-                .quote-text
-                  h3 AL RAYHAN <span>/ UI Designer</span>
-                  p Lorem Ipsum is not simply is  an
-                    <br> action designer random text
-                    <br> It has roots in a piece
-                .quote-social
-                  a(href="#")
-                    i.fab.fa-facebook-f
-                  a(href="#")
-                    i.fab.fa-twitter
-                  a(href="#")
-                    i.fab.fa-dribbble
-                  a(href="#")
-                    i.far.fa-envelope
-
-      section#reviews.reviews
-        .container
-          .reviews-wrapper
-            h2 what they says
-            h4 Lorem ipsum dolor sit amet event landing template
-            #carouselExampleControls.carousel.slide(data-ride='carousel')
-              .carousel-inner
-                .carousel-item.active
-                  .carousel-wrapp
-                    .carousel-photos
-                      img.d-block(src='images/Photo-1.png', alt='Photo-1')
-                    .carousel-block
-                      h3 AL RAYHAN / UI/UX DESIGNER
-                      p Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      .stars
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                .carousel-item
-                  .carousel-wrapp
-                    .carousel-photos
-                      img.d-block(src='images/Photo-2.png', alt='Photo-2')
-                    .carousel-block
-                      h3 AL RAYHAN / UI/UX DESIGNER
-                      p Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      .stars
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                .carousel-item
-                  .carousel-wrapp
-                    .carousel-photos
-                      img.d-block(src='images/Photo-3.png', alt='Photo-3')
-                    .carousel-block
-                      h3 AL RAYHAN / UI/UX DESIGNER
-                      p Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      .stars
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                .carousel-item
-                  .carousel-wrapp
-                    .carousel-photos
-                      img.d-block(src='images/Photo-4.png', alt='Photo-4')
-                    .carousel-block
-                      h3 AL RAYHAN / UI/UX DESIGNER
-                      p Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      .stars
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                .carousel-item
-                  .carousel-wrapp
-                    .carousel-photos
-                      img.d-block(src='images/Photo-5.png', alt='Photo-5')
-                    .carousel-block
-                      h3 AL RAYHAN / UI/UX DESIGNER
-                      p Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      .stars
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-                        i.fas.fa-star
-              .control-block
-                .control-block-1.control-block-r
-                  i.fas.fa-chevron-right
-                  a.carousel-control(href='#carouselExampleControls', role='button', data-slide='next')
-                    span(aria-hidden='true')
-                .control-block-1.control-block-l
-                  i.fas.fa-chevron-left
-                  a.carousel-control(href='#carouselExampleControls', role='button', data-slide='prev')
-                    span(aria-hidden='true')
-
-
-      section#partners.partners
-        .container
-          .partners-wrapper
-            .partner.partner-1.last
-              img(src="images/kisspng-netflix-4k-resolution-streaming-media-television-f-netflix-icon-5b485a26d329a0.0626328015314683268649.png", alt="Logo-1")
-            .partner.partner-2.last
-              img(src="images/apple_logo_PNG19687.png", alt="Logo-2")
-            .partner.partner-3
-              img(src="images/kisspng-google-i-o-google-logo-google-5abe0c79e0a069.7456660315224044739201.png", alt="Logo-3")
-          .partners-wrapper-2
-            .partner.partner-1.logo-mr
-              img(src="images/kisspng-netflix-4k-resolution-streaming-media-television-f-netflix-icon-5b485a26d329a0.0626328015314683268649.png", alt="Logo-1")
-            .partner.partner-2.logo-mr
-              img(src="images/apple_logo_PNG19687.png", alt="Logo-2")
-            .partner.partner-3.logo-mr
-              img(src="images/kisspng-google-i-o-google-logo-google-5abe0c79e0a069.7456660315224044739201.png", alt="Logo-3")
-            .partner.partner-2.logo-mr
-              img(src="images/apple_logo_PNG19687.png", alt="Logo-2")
-            .partner.partner-2.logo-mr
-              img(src="images/apple_logo_PNG19687.png", alt="Logo-2")
-            .partner.partner-3.last-2
-              img(src="images/kisspng-google-i-o-google-logo-google-5abe0c79e0a069.7456660315224044739201.png", alt="Logo-3")
-
-      section#contact.contact
-        .container
-          .contact-wrapper
-            .contact-form
-              form#forma(action="mail.php" method="post")
-                input.name(type="text", name="name", placeholder="Name*")
-                input.subject(type="text", name="subject", placeholder="Subject*")
-                input.mail(type="text", name="mail", placeholder="E-mail")
-                textarea#message(name="message", cols="30", rows="10", placeholder="Message")
-                .button
-                  button
-                    a(href="#") SEND MESSAGE
-            .adress
-              .adress-wrapper
-                .adress-info
-                  p Adress line 1
-                  p Adress line 2
-                  p Phone:  548 94564
-                  p.mb-5.p-adress Fax: +456456 54546
-                .adress-mail
-                  p Web: www.designagency.net
-                  p.margin-mail E-mail: info@designagency.net
-              .style1
-                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac90294cb48c4408b1371afa4a4c14ab63a76035d4eff5d1b262afb8a2804fca8&amp;source=constructor" frameborder="0")
-              br
-
-      footer.social-block
-        .container
-          .social-block-wrap
-            h4 FOLLOW US
-
-            .social-links-wrapper
-              .social-block
-                i.fab.fa-pinterest-p
-              .social-block
-                i.fab.fa-twitter
-              .social-block
-                i.fab.fa-facebook
-              .social-block
-                i.fab.fa-dribbble
-
-            p Copyright Masum Parvej, All Rights Reserved
-
-
-
-
-
-
-
-
-
-
-
+                  a.nav-item.nav-link(href='services.html')
+                    | Услуги
+                    span.sr-only (current)
+                  a.nav-item.nav-link(href='#')
+                    | Меню
+                    span.sr-only (current)
+              .col-md-3
+                .main-btn-wrap.text-nowrap
+                  a.popup-callback-btn(href="#popup-callback-form") Заказать звонок
+      .main-wrap
+        .main-bg
+          .wrap
+            h1.mb-4 Производство и монтаж откатных ворот
+            ul.d-lg-block
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text Выбор оптимального решения с учетом требований и особенностей 
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text Сертифицированный дистрибьютор ведущих производителей
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text Собственное производство и склад
+              li.d-flex
+                .left-col
+                  i.fa.fa-angle-right
+                .right-col.text “Гарантия лучшей цены” - о чем молчат в компаниях                 
+            span.info Вызовите специалиста на объект в удобное для вас время. Эта услуга бесплатная
+            .main-btn-wrap 
+              a.popup-callback-btn(href="#popup-callback-form") Оставить заявку
+      section.section-1 
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Каталог продукции
+                hr
+            .card-deck
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Откатные ворота
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .card-footer
+                  small.text-muted от 2000
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Калитки
+                  p.card-text This card has supporting text below as a natural lead-in to additional content.
+                .card-footer
+                  small.text-muted от 200
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Автоматика
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                .card-footer
+                  small.text-muted от 400
+      section.section-2 
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Наши услуги
+            .card-deck
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Сервис и ремонт
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Замер
+                  p.card-text This card has supporting text below as a natural lead-in to additional content.
+              .card
+                img.card-img-top(src='/images/AdobeStock_196638946_Preview.jpg' alt='...')
+                .card-body
+                  h5.card-title Монтаж и демонтаж
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+      section.section-3
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Каждый клиент получает
+              .col-sm-6.mb-3
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 1
+                      h5.card-title Консультация и замер бесплатно
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+              .col-sm-6.mb-3
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 2
+                      h5.card-title Оптимальная стоимость
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+              .col-sm-6
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 3
+                      h5.card-title Помощь в выборе материалов
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+              .col-sm-6
+                .card
+                  .card-body
+                    .num-block.mb-3
+                      span.num.mr-5 4
+                      h5.card-title Уборка территории
+                    p.card-text With supporting text below as a natural lead-in to additional content.
+      section.section-4
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Несколько шагов до Ваших ворот
+              .card-group
+                .card
+                  img.card-img-top(src='/images/chat_106702.png' alt='Консультация')
+                  .card-body
+                    h5.card-title Консультация
+                    p.card-text
+                      | Позвонив нам Вы получите бесплатную консультацию по выбору материалов и автоматики для ворот. 
+                .card
+                  img.card-img-top(src='/images/mapmarker_106655.png' alt='Замер')
+                  .card-body
+                    h5.card-title Замер
+                    p.card-text This card has supporting text below as a natural lead-in to additional content.
+                .card
+                  img.card-img-top(src='/images/doc_106706.png' alt='Договор')
+                  .card-body
+                    h5.card-title Договор
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                .card
+                  img.card-img-top(src='/images/cog_106690.png' alt='Монтаж')
+                  .card-body
+                    h5.card-title Монтаж
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .card
+                  img.card-img-top(src='/images/shield_106660.png' alt='Результат')
+                  .card-body
+                    h5.card-title Сдача объекта
+                    p.card-text
+                      | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.      
+      section.section-4
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Наше порфолио
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')
+              .col-lg-3.col-md-4.col-6.thumb
+                a(data-fancybox='gallery' href='/images/IMG_4413 1.jpg')
+                  img.img-fluid(src='/images/IMG_4413 1-1.jpg' alt='...')   
+      section.section-5
+        .section-wrapper
+          .container
+            .row
+              .title-block
+                h2 Мобильный и безопасный офис
+                h2 Мобильный и безопасный офис
 
 
 
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
